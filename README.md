@@ -10,7 +10,7 @@ xvm
   },
   "inbounds": [
     {
-      "port": "$PORT",
+      "port": 80,
       "protocol": "VMESS",
       "settings": {
         "clients": [
@@ -24,7 +24,7 @@ xvm
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "${WSPATH}"
+          "path": "/"
         }
       }
     }
