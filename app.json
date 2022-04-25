@@ -3,13 +3,9 @@
     "description": "XVM test",
     "keywords": ["XVM"],
     "env": {
-        "UUID": {
-            "description": "UUID",
-            "value": "d1a82880-a447-4b6d-8102-e2f44c57b420"
-        },
-        "WSPATH": {
-            "description": "WebSocket Path",
-            "value": "/"
+        "CONFIG_JSON": {
+            "description": "CONFIG_JSON",
+            "value": " "
         }
     },
     "website": "https://github.com/",
