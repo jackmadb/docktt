@@ -12,7 +12,24 @@ rm -rf /tmp/xray
 # xray new configuration
 install -d /usr/local/etc/xray
 cat << EOF > /usr/local/etc/xray/config.json
-$CONFIG_JSON
+{
+  "log": {
+    "loglevel": "none"
+  },
+  "inbounds": [
+    {
+      "port": "$PORT",
+${CONFIG_JSON}
+ }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
+}
 EOF
 
 # Run xray
