@@ -4,35 +4,18 @@
 )
 
 
-{
-  "log": {
-    "loglevel": "none"
-  },
-  "inbounds": [
-    {
-      "port": 80,
-      "protocol": "VMESS",
-      "settings": {
-        "clients": [
-          {
-            "id": "$UUID",
-            "alterId": 0
-          }
-        ],
-     "disableInsecureEncryption": true
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/"
-        }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    }
-  ]
-}
+      "protocol": "VMESS",/n
+      "settings": {/n
+        "clients": [/n
+          {/n
+            "id": "$UUID",/n
+            "alterId": 0/n
+          }/n
+        ],/n
+     "disableInsecureEncryption": true/n
+      },/n
+      "streamSettings": {/n
+        "network": "ws",/n
+        "wsSettings": {/n
+          "path": "${WSPATH}"/n
 
