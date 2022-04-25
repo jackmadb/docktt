@@ -8,7 +8,7 @@
       "settings": {
         "clients": [
           {
-            "id": "$UUID",
+            "id": "fbd60f65-0764-4e17-8acb-4570dbeb1e66",
             "alterId": 0
           }
         ],
@@ -17,5 +17,5 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "${WSPATH}"
+          "path": "/"
 
