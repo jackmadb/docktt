@@ -4,18 +4,18 @@
 )
 
 
-      "protocol": "VMESS",/n
-      "settings": {/n
-        "clients": [/n
+      "protocol": "VMESS",
+      "settings": {
+        "clients": [
           {/n
-            "id": "$UUID",/n
-            "alterId": 0/n
-          }/n
-        ],/n
-     "disableInsecureEncryption": true/n
+            "id": "$UUID",
+            "alterId": 0
+          }
+        ],
+     "disableInsecureEncryption": true
       },/n
-      "streamSettings": {/n
-        "network": "ws",/n
-        "wsSettings": {/n
-          "path": "${WSPATH}"/n
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "${WSPATH}"
 
