@@ -13,7 +13,7 @@
           }
         ],
      "disableInsecureEncryption": true
-      },/n
+      },
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
