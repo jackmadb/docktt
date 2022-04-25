@@ -12,37 +12,7 @@ rm -rf /tmp/xray
 # xray new configuration
 install -d /usr/local/etc/xray
 cat << EOF > /usr/local/etc/xray/config.json
-{
-  "log": {
-    "loglevel": "none"
-  },
-  "inbounds": [
-    {
-      "port": "$PORT",
-      "protocol": "VMESS",
-      "settings": {
-        "clients": [
-          {
-            "id": "$UUID",
-            "alterId": 0
-          }
-        ],
-     "disableInsecureEncryption": true
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "${WSPATH}"
-        }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    }
-  ]
-}
+$CONFIG_JSON
 EOF
 
 # Run xray
