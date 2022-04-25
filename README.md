@@ -2,7 +2,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fhhuyf%2Fxray-hku
 )
-
+**************VMESS*******************
 
       "protocol": "VMESS",
       "settings": {
@@ -19,3 +19,22 @@
         "wsSettings": {
           "path": "/"
 
+
+
+***********VLESS*********************
+
+
+            "protocol": "vless",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "fbd60f65-0764-4e17-8acb-4570dbeb1e66",
+                        "level": 0
+                    }
+                ],
+                "decryption": "none"
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                  "path": "/"
