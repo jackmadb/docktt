@@ -7,7 +7,7 @@
       "protocol": "VMESS",
       "settings": {
         "clients": [
-          {/n
+          {
             "id": "$UUID",
             "alterId": 0
           }
