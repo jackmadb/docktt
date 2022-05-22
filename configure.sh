@@ -1,17 +1,17 @@
 #!/bin/sh
 
-# Download and install xray
-mkdir /tmp/xray
-curl -L -H "Cache-Control: no-cache" -o /tmp/xray/xray.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
-unzip /tmp/xray/xray.zip -d /tmp/xray
-install -m 755 /tmp/xray/xray /usr/local/bin/xray
+# Download and install Peppa
+mkdir /tmp/Peppa
+curl -L -H "Cache-Control: no-cache" -o /tmp/Peppa/Peppa.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip
+unzip /tmp/Peppa/Peppa.zip -d /tmp/Peppa
+install -m 755 /tmp/Peppa/xray /usr/local/bin/Peppa
 
 # Remove temporary directory
-rm -rf /tmp/xray
+rm -rf /tmp/Peppa
 
-# xray new configuration
-install -d /usr/local/etc/xray
-cat << EOF > /usr/local/etc/xray/config.json
+# Peppa new configuration
+install -d /usr/local/etc/Peppa
+cat << EOF > /usr/local/etc/Peppa/config.json
 {
   "log": {
     "loglevel": "none"
@@ -32,5 +32,5 @@ ${CONFIG_JSON}
 }
 EOF
 
-# Run xray
-/usr/local/bin/xray -config /usr/local/etc/xray/config.json
+# Run Peppa
+/usr/local/bin/Peppa -config /usr/local/etc/Peppa/config.json
